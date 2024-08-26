@@ -1,33 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Matemasie&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.title {
+    letter-spacing: -.01em;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.header-text {
+    color: #81808b;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bold-text {
+    color: #090a18;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.text {
+    color: #51535d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.tag {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 105%;
+    font-family: "Instrument Sans", sans-serif;
+    color: #090a1866;
+    padding: 0 15px;
+    height: 36px;
+    border: 1px solid #ccccd1;
+    border-radius: 8px;
+    background-color: #090a180a;
+    display: flex;
+    align-items: center;
+}
+
+.business-tag {
+    cursor: none;
+    color: #090a1866;
+    background-color: #090a180a;
+    border: 1.43759px solid #090a1833;
+    border-radius: 12px;
+    height: 48.8781px;
+    padding: 0 21px;
+    display: flex;;
+    align-items: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 105%;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.packages-text {
+    color: #b5b5ba;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.background1 {
+    background-image: linear-gradient(0deg, #38b7ff00 43%, #38b7ff 85%);
+}
+
+.background2 {
+    background-image: linear-gradient(0deg, #38b7ff00 43%, #fff3 85%);
+}
+.background3 {
+    background-image: linear-gradient(344deg, #d782ff00 67%, #d782ff);
+}
+.background4 {
+    background-image: linear-gradient(315deg, #ffffff1a 67%, #fffc);;
 }
